@@ -1,0 +1,14 @@
+{
+  "id": "jenkins",
+  "kind": "Service",
+  "apiVersion": "v1beta1",
+  "port": 8080,
+  "containerPort": jenkins-endpoint,
+  "labels": {
+     "name": "jenkins"
+  },
+  "selector": {
+     "name": "jenkins"
+  },
+  "createExternalLoadBalancer": true
+}
